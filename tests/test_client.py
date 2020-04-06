@@ -73,8 +73,8 @@ def test_get_user_non_admin(pact, client):
     expected = {
         'name': 'UserA',
         'id': Term(
-            r'^[a-f0-9]{8}-?[a-f0-9]{4}-?4[a-f0-9]{3}-?[89ab][a-f0-9]{3}-?[a-f0-9]{12}\Z',
-            '00000000-0000-4000-a000-000000000000'
+            r'[a-f0-9]+',
+            '1234567'
         ),
         'created_on': Term(
             r'\d+-\d+-\d+T\d+:\d+:\d+',

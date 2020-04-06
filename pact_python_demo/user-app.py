@@ -23,6 +23,8 @@ def setup_no_user_a():
 
 
 def setup_user_a_nonadmin():
+    # Fix me by returning datetime.datetime.now().isoformat() or changing the
+    # expectation in the client
     fakedb['UserA'] = {'name': "UserA", 'id': '1234567', 'created_on': datetime.datetime.now(), 'admin': False}
 
 

@@ -4,6 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [dev-packages]
+pylint = "*"
 
 [packages]
 atomicwrites = "*"
@@ -27,4 +28,4 @@ virtualenv-clone = "*"
 flask = "*"
 
 [requires]
-python_version = "2.7"
+python_version = "3.6.9"
